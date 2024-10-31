@@ -8,11 +8,15 @@ nav .dropdown a:hover span{
     color: cadetblue;
 }
 
-.socialMedia{
+/* .socialMedia{
     z-index: 2000;
     padding-top: 120px;
     font-size: 60px !important;
     direction: rtl;
+} */
+
+.slider{
+    padding-top: 100px !important;
 }
 
 .ExploreOurHotel .hotelImg , .showingImg{
