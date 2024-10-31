@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/all.min.css">
+    <title>Anantara Hotel</title>
+  </head>
+  <body class=" position-relative">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top" style="z-index: 4990;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="bg-black d-block w-50 mx-auto mx-sm-auto mx-md-auto mx-lg-0"
+            src="Images/anantara_plaza_nice_hotel_2024_360x140.webp"
+            alt=""
+            width="150"
+          />
+        </a>
+        <span class="text-white mb-2 fs-3 border-end pe-3 me-5"
+          >Anantara Hotel</span
+        >
+
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-3" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll fs-5 pb-2"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="text-light nav-link active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="text-light nav-link dropdown-toggle border border-2 border-light rounded-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="ps-2">R</span>ooms
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item active" href="#">Deluxe Room</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Grand Deluxe</a></li>
+                <li><hr class="dropdown-divider bg-light" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Premium Garden View Room with Balcony</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-light nav-link" aria-disabled="true"
+                >About</a
+              >
+            </li>
+          </ul>
+          <form
+            class="d-flex flex-column flex-lg-row pb-2 flex-sm-column align-items-center"
+            role="search"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <div class="btnGroup d-flex mt-3 mt-lg-0 mt-md-0 mt-sm-3">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-dark mx-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                LogIn
+              </button>
+            </div>
+          </form>
+
+          <div
+            class="modal"
+            style="z-index: 5000;"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary">
+                  <h1
+                    class="modal-title fs-5 text-light"
+                    id="exampleModalLabel"
+                  >
+                    Log In
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close bg-info"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="px-4 py-3">
+                    <div class= w-50"mb-3">
+                      <label for="exampleDropdownFormEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleDropdownFormEmail1"
+                        placeholder="email@example.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="exampleDropdownFormPassword1"
+                        class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleDropdownFormPassword1"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <div class="form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="dropdownCheck"
+                        />
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary me-auto">
+                    LogIn
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="socialMedia fixed-top fw-bolder mt-3 ">
+      <ul>
+        <li class=" list-unstyled"><a class=" text-info" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class=" list-unstyled"><a class=" text-info" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li class=" list-unstyled"><a class=" text-info" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li class=" list-unstyled"><a class=" text-info" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li class=" list-unstyled"><a class=" text-info" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </section>
+    <section class="slider">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="Images/deluxe_sea_garden_view_balcony_bed_hero_984x532.webp"
+              class="d-block w-100"
+              alt="deluxeRoom"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2 text-black">Rooms</h5>
+              <p class="text-dark fw-bolder">
+                The rooms at this luxury hotel in Nice are elegantly and
+                thoughtfully designed, maximising space, light and iconic Cote
+                d’Azur views. Choose a higher floor with a private terrace for a
+                panorama of the Baie des Anges. Inspired by the golden era of
+                Côte d'Azur, these rooms offer a combination of comfort and
+                sophistication.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Images/anantara_plaza_nice_hotel_rooftop_wedding_image_1152x608.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2 text-black">Riviera Ballroom</h5>
+              <p class="text-dark fw-bolder">
+                Our sleek, elegant ballroom boasts natural tones of marble and
+                wood so that your chosen décor and floral arrangements shine
+                during your wedding in Nice. Enjoy a sit-down dinner, with the
+                tables cleared afterwards for dancing.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Images/junior_suite_garden_view_balcony_bed_hero_984x532.webp"
+              class="d-block w-100"
+              alt="suite"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2 text-black">Suites</h5>
+              <p class="text-dark fw-bolder">
+                Suites offer the luxury of space, whether out on your private
+                terrace or in your living room. Opt for the Baie des Anges or
+                Presidential Suite for the best views in the city. The suites,
+                ranging from Junior to Presidential, offer ultimate comfort and
+                additional lounge or dining areas for a memorable experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="welcomeSection bg-dark rounded-bottom-2">
+      <div class="container">
+        <p class="text-white pt-4 text-start">
+          This luxury hotel in Nice is located in a historic building with a
+          Belle Epoque façade inaugurated in 1848 and completely renovated by
+          award-winning studio David Collins, local architect Jean-Paul Gomis
+          and TBC Interiorismo Studio, in a contemporary style. Due to the
+          hotel’s location, you’ll find it easy to spend your days exploring the
+          beautiful Place Massena and the world-famous Promenade des Anglais.
+          The hotel presents a contemporary style filled with high-end
+          furnishings, services and facilities. You can spend your days relaxing
+          with the signature treatments of Anantara Spa, making the most of the
+          panoramic views at the SEEN by Olivier Rooftop Bar, working on your
+          well-being at state-of-the-art fitness center or lounging on the beach
+          with a cocktail in hand. The hotel’s 151 suites and rooms facing the
+          Mediterranean and Albert 1er gardens have all been newly redesigned
+          and decorated in a contemporary style. In your room, you’ll experience
+          luxury and sophistication inspired by the Mediterranean and the golden
+          era of Côte d'Azur. Most of the rooms at this luxury hotel in Nice
+          come with either a garden or a sea view and the majority have either a
+          balcony or a terrace. Plus, the range of accommodation options is sure
+          to suit your needs, with deluxe, premium, junior suites and
+          large-scale suites all available.
+        </p>
+        <button class="btn btn-light fw-bold mb-4" type="button">
+          Learn More
+        </button>
+      </div>
+    </section>
+    <hr />
+    <section class="introSection text-center bg-dark-subtle rounded-2">
+      <h2 class="p-5">
+        DISCOVER A GLAMOUROUS LUXURY HOTEL IN NICE COTE D'AZUR
+      </h2>
+    </section>
+    <section class="accordionSection mt-3">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-black text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Private Beach Partner
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Sip, savour and soak up the sun in style on Nice’s favourite
+              private beach. Enjoy pre-bookings via our concierge service and
+              live the Riviera lifestyle.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed bg-black text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              ‘’SEEN by Olivier’’ Restaurant
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              From Lisbon to the world. Refined yet relaxed and understated,
+              this iconic panoramic rooftop terrace, with a new bar and
+              restaurant in Nice, is the new home of SEEN by Olivier.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed bg-black text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              ‘’SEEN by Olivier’’ Rooftop Bar
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Sin and be SEEN. The SEEN by Olivier Rooftop Bar presents a
+              curated selection of signature cocktails, exclusive drinks and
+              irresistible snacks.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="translateSection">
+      <h2 class="text-center bg-dark-subtle p-3 rounded-3">
+        Translate From Arabic To English
+      </h2>
+      <div class="card bg-dark text-light">
+        <div class="card-body">
+          <div class="card-content d-flex justify-content-start">
+            <h5 class="card-title">Write and Translate</h5>
+            <a class="fs-6 fw-medium text-decoration-none ms-2" href="#"
+              >Press Here</a
+            >
+          </div>
+          <button
+            type="button"
+            id="copyButton"
+            class="btn btn-outline-light mt-2 mb-3"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-title="Copy to Clipboard"
+            onclick="copyText(this)"
+          >
+            Copy
+          </button>
+          <textarea
+            class="form-control"
+            rows="5"
+            placeholder="Translate"
+          ></textarea>
+        </div>
+      </div>
+      <hr />
+      <h2 class="text-center bg-dark-subtle p-3 rounded-3">
+        Translate From Arabic To Frensh
+      </h2>
+      <div class="card bg-dark text-light">
+        <div class="card-body">
+          <div class="card-content d-flex justify-content-start">
+            <h5 class="card-title">Write and Translate</h5>
+            <a class="fs-6 fw-medium text-decoration-none ms-2" href="#"
+              >Press Here</a
+            >
+          </div>
+          <button
+            type="button"
+            id="copyButton"
+            class="btn btn-outline-light mt-2 mb-3"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-title="Copy to Clipboard"
+            onclick="copyText(this)"
+          >
+            Copy
+          </button>
+          <textarea
+            class="form-control"
+            rows="5"
+            placeholder="Translate"
+          ></textarea>
+        </div>
+      </div>
+      <hr />
+      <h2 class="text-center bg-dark-subtle p-3 rounded-3">
+        Translate From Arabic To German
+      </h2>
+      <div class="card bg-dark text-light">
+        <div class="card-body">
+          <div class="card-content d-flex justify-content-start">
+            <h5 class="card-title">Write and Translate</h5>
+            <a class="fs-6 fw-medium text-decoration-none ms-2" href="#"
+              >Press Here</a
+            >
+          </div>
+          <button
+            type="button"
+            id="copyButton"
+            class="btn btn-outline-light mt-2 mb-3"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-title="Copy to Clipboard"
+            onclick="copyText(this)"
+          >
+            Copy
+          </button>
+          <textarea
+            class="form-control"
+            rows="5"
+            placeholder="Translate"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="ExploreOurHotel bg-dark pb-4">
+      <div class="hotelImg"></div>
+      <hr />
+      <h2
+        class="text-dark bg-light-subtle fs-2 fw-bold text-center p-4 rounded-2"
+      >
+        Explore Our Hotel
+      </h2>
+      <div class="container">
+        <section class="ourRoomsAndSuits row">
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/room1_premium_garden_view_balcony_bed_hero_880x600.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Room1</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/room2_deluxe_sea_garden_view_balcony_bed_straight_880x600.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Room2</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/room3_deluxe_bed_880x600.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Room3</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/Suite1_suite_desk_to_bed_880x600.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Suite1</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/Suite2_anantara_plaza_nice_garden_view_880x600.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Suite2</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/Suite3_anantara_plaza_nice_junior_suite_panoramic_view_bathroom_880x475.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Suite3</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/ananatara_plaza_nice_hotel_panoramic_breakfast_croissant_880x620 (1).webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Dining1</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card mt-5 mx-auto col-12 col-sm-12 col-md-6 col-lg-4"
+            style="width: 23.5rem"
+          >
+            <img
+              src="Images/anantara_plaza_nice_hotel_in_room_dining_880x620.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-content d-flex justify-content-between">
+                <h5 class="card-title pt-2 fs-3 fw-bold">Dining2</h5>
+                <a href="#" class="btn btn-primary fs-4">Know More</a>
+              </div>
+              <p class="card-text fs-5 mt-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                ducimus provident magni eveniet cum! Magnam similique nostrum
+                blanditiis maxime dicta.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="showingImg"></div>
+    <hr />
+    <section class="thanksSection py-5 mb-5">
+      <h2 class="text-light bg-dark fs-2 fw-bold text-center p-4 rounded-2">
+        Thanks For Visiting Our Site
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="offerCards d-flex flex-column flex-lg-row justify-content-between flex-sm-column ">
+            <div class="card card1 mt-5 mx-auto mx-sm-auto mx-lg-0" style="width: 20rem;">
+              <div class="card-body m-auto">
+                <h5 class="card-title text-black fs-4 fw-bolder">Best Offers You Can Ever Seen</h5>
+                <p class="card-text text-black fs-4"><i class="fa-regular fa-clock pe-2 mt-2"></i>October 31,2024</p>
+                <div class="offerImg text-black">
+                  <img src="Images/anantara_season_exclusives_offers_880x620.webp" alt="">
+                  <h5>Explore the most exciting cities
+                  </h5>
+                  <h6>Session Exclusives</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card card1 card2 mt-5 mx-auto mx-sm-auto mx-lg-0" style="width: 20rem;">
+              <div class="card-body m-auto">
+                <h5 class="card-title text-black fs-4 fw-bolder">Best Offers You Can Ever Seen</h5>
+                <p class="card-text text-black fs-4"><i class="fa-regular fa-clock pe-2 mt-2"></i>October 31,2024</p>
+                <div class="offerImg text-black">
+                  <img src="Images/anantara_plaza_nice_stay_longer_880x620.webp" alt="">
+                  <h5>The longer stay offer
+                  </h5>
+                  <h6>Stay Longer Special</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card card1 card3 mt-5 mx-auto mx-sm-auto mx-lg-0" style="width: 20rem;">
+              <div class="card-body m-auto">
+                <h5 class="card-title text-black fs-4 fw-bolder">Best Offers You Can Ever Seen</h5>
+                <p class="card-text text-black fs-4"><i class="fa-regular fa-clock pe-2 mt-2"></i>October 31,2024</p>
+                <div class="offerImg text-black">
+                  <img src="Images/anantara_plaza_nice_hotel_romantic_stay_offer_880x620.webp" alt="">
+                  <h5>Escape to the French Riviera
+                  </h5>
+                  <h6>A Romantic Stay To Remember</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <hr>
+    <section class="hotelNews bg-dark pb-4">
+      <h2 class="fs-1 fw-bolder text-center py-5 text-light">Hotel News</h2>
+      <div class="card mb-3 m-auto rounded-4 overflow-hidden" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="Images/anantara_plaza_nice_hotel_drone_exterior-880x620.webp" class=" h-100 img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 contentBody pt-5">
+            <div class="card-body">
+              <h2 class="card-title fw-bold">Podcast Title</h2>
+              <h6><i class="fa-solid fa-calendar-days me-2"></i>Mon, May 25<sub>th</sub> 2024</h6>
+              <div class="line rounded-3 bg-black"></div>
+              <p class="card-text mt-3 text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi possimus reprehenderit dolor sit architecto? Quisquam officiis aliquid cum quae obcaecati inventore. Blanditiis labore facere alias voluptatem quae aperiam error, dolorum atque aliquam natus iusto, nobis corrupti officiis neque dolor dolore ea voluptatum! Incidunt assumenda officiis ad nemo excepturi soluta sunt.</p>
+              <div class="hotelNewsBtn mt-5">
+                <button class="btn btn-outline-dark podcast" type="button"><i class="fas fa-tag me-1"></i>
+                  Podcast</button>
+                  <button class="btn btn-outline-dark mins" type="button"><i class="fa-regular fa-clock me-1"></i>
+                    55 Mins.</button>
+                    <button class="btn btn-outline-dark" type="button"><i class="fa-solid fa-play me-1"></i>
+                      Play Episode</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 m-auto rounded-4 overflow-hidden" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="Images/anantara_plaza_nice_hotel_exterior_bar_panoramic_day-880x620.webp" class=" h-100 img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 contentBody pt-5">
+            <div class="card-body">
+              <h2 class="card-title fw-bold">Podcast Title</h2>
+              <h6><i class="fa-solid fa-calendar-days me-2"></i>Mon, May 25<sub>th</sub> 2024</h6>
+              <div class="line rounded-3 bg-info"></div>
+              <p class="card-text mt-3 text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi possimus reprehenderit dolor sit architecto? Quisquam officiis aliquid cum quae obcaecati inventore. Blanditiis labore facere alias voluptatem quae aperiam error, dolorum atque aliquam natus iusto, nobis corrupti officiis neque dolor dolore ea voluptatum! Incidunt assumenda officiis ad nemo excepturi soluta sunt.</p>
+              <div class="hotelNewsBtn mt-5">
+                <button class="btn btn-outline-dark podcast" type="button"><i class="fas fa-tag me-1"></i>
+                  Podcast</button>
+                  <button class="btn btn-outline-dark mins" type="button"><i class="fa-regular fa-clock me-1"></i>
+                    55 Mins.</button>
+                    <button class="btn btn-outline-info" type="button"><i class="fa-solid fa-play me-1"></i>
+                      Play Episode</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 m-auto rounded-4 overflow-hidden" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="Images/spa.webp" class=" h-100 img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 contentBody pt-5">
+            <div class="card-body">
+              <h2 class="card-title fw-bold">Podcast Title</h2>
+              <h6><i class="fa-solid fa-calendar-days me-2"></i>Mon, May 25<sub>th</sub> 2024</h6>
+              <div class="line rounded-3 bg-success"></div>
+              <p class="card-text mt-3 text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi possimus reprehenderit dolor sit architecto? Quisquam officiis aliquid cum quae obcaecati inventore. Blanditiis labore facere alias voluptatem quae aperiam error, dolorum atque aliquam natus iusto, nobis corrupti officiis neque dolor dolore ea voluptatum! Incidunt assumenda officiis ad nemo excepturi soluta sunt.</p>
+              <div class="hotelNewsBtn mt-5">
+                <button class="btn btn-outline-dark podcast" type="button"><i class="fas fa-tag me-1"></i>
+                  Podcast</button>
+                  <button class="btn btn-outline-dark mins" type="button"><i class="fa-regular fa-clock me-1"></i>
+                    55 Mins.</button>
+                    <button class="btn btn-outline-success" type="button"><i class="fa-solid fa-play me-1"></i>
+                      Play Episode</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 m-auto rounded-4 overflow-hidden" style="max-width: 1300px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="Images/anantara_plaza_nice_hotel_presidential_suite_balcony_0096-1556x1037.jpg" class=" h-100 img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 contentBody pt-5">
+            <div class="card-body">
+              <h2 class="card-title fw-bold">Podcast Title</h2>
+              <h6><i class="fa-solid fa-calendar-days me-2"></i>Mon, May 25<sub>th</sub> 2024</h6>
+              <div class="line rounded-3 bg-danger"></div>
+              <p class="card-text mt-3 text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi possimus reprehenderit dolor sit architecto? Quisquam officiis aliquid cum quae obcaecati inventore. Blanditiis labore facere alias voluptatem quae aperiam error, dolorum atque aliquam natus iusto, nobis corrupti officiis neque dolor dolore ea voluptatum! Incidunt assumenda officiis ad nemo excepturi soluta sunt.</p>
+              <div class="hotelNewsBtn mt-5">
+                <button class="btn btn-outline-dark podcast" type="button"><i class="fas fa-tag me-1"></i>
+                  Podcast</button>
+                  <button class="btn btn-outline-dark mins" type="button"><i class="fa-regular fa-clock me-1"></i>
+                    55 Mins.</button>
+                    <button class="btn btn-outline-danger" type="button"><i class="fa-solid fa-play me-1"></i>
+                      Play Episode</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hotelSocial justify-content-between flex-wrap d-flex pt-5 flex-sm-column flex-md-column flex-lg-row">
+      <div class="card border-2 w-50 border-0  col-sm-12 col-md-6 col-lg-4 mx-auto mb-5 text-center fs-2 bg-dark-subtle fw-bolder" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-0">Subscribe Now</div>
+        <div class="card-body">
+          <i class="fa-brands fa-x-twitter fs-1 fw-bolder"></i>
+        </div>
+        <div class="card-footer bg-transparent border-0">Go To Link</div>
+      </div>
+      <div class="card border-2 w-50 border-0  col-sm-12 col-md-6 col-lg-4 mx-auto mb-5 text-center fs-2 bg-dark-subtle fw-bolder" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-0">Follow</div>
+        <div class="card-body">
+          <i class="fa-brands fa-whatsapp fs-1 fw-bolder text-success"></i>
+        </div>
+        <div class="card-footer bg-transparent border-0">Go To Link</div>
+      </div>
+      <div class="card border-2 w-50 border-0  col-sm-12 col-md-6 col-lg-4 mx-auto mb-5 text-center fs-2 bg-dark-subtle fw-bolder" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-0">Like The Page</div>
+        <div class="card-body">
+          <i class="fa-brands fa-linkedin fs-1 fw-bolder text-primary"></i>
+        </div>
+        <div class="card-footer bg-transparent border-0">Go To Link</div>
+      </div>
+      <div class="card border-2 w-50 border-0  col-sm-12 col-md-6 col-lg-4 mx-auto mb-5 text-center fs-2 bg-dark-subtle fw-bolder" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-0">Watch Videos</div>
+        <div class="card-body">
+          <i class="fa-brands fa-instagram fs-1 fw-bolder text-danger"></i>
+        </div>
+        <div class="card-footer bg-transparent border-0">Go To Link</div>
+      </div>
+    </section>
+    <footer class=" bg-dark pb-2">
+      <section class="footSection py-5 container">
+        <div class="row">
+          <div class="cards d-flex justify-content-between flex-wrap flex-column flex-sm-column flex-md-column flex-lg-row">
+            <div class="card mx-auto mt-3 mb-3 border-3 border-top border-start-0 border-end-0 border-bottom-0 rounded-0 bg-dark" style="max-width: 20rem;">
+              <div class="card-content d-flex border-3 border-bottom">
+                <img class="py-3" src="Images/anantara_plaza_nice_hotel_presidential_suite_balcony_0096-1556x1037.jpg" alt="">
+                <h3 class=" text-light fw-bold ms-2 align-self-center">The Best Hotel</h3>
+              </div>
+              <div class="contact pt-4">
+                <h4 class=" text-light text-center">Tel : 000_000_000</h4>
+                <h4 class=" text-light text-center">Address : France</h4>
+                <h4 class=" text-light text-center">Fax : 000_000_000</h4>
+              </div>
+            </div>  
+            <div class="card mx-auto mt-3 mb-3 border-3 border-top border-start-0 border-end-0 border-bottom-0 rounded-0 bg-dark" style="max-width: 20rem;">
+              <div class="card-content d-flex border-3 border-bottom">
+                <img class="py-3" src="Images/anantara_plaza_nice_hotel_presidential_suite_balcony_0096-1556x1037.jpg" alt="">
+                <h3 class=" text-light fw-bold ms-2 align-self-center">Important Links</h3>
+              </div>
+              <div class="contact pt-3">
+                <h4 class=" text-light text-center">Visit Us</h4>
+                <h4 class=" text-light text-center">Take A Look</h4>
+                <h4 class=" text-light text-center">Your Comfortable Is More Important</h4>
+              </div>
+            </div>
+            <div class="card mx-auto mt-3 mb-5 border-3 border-top border-start-0 border-end-0 border-bottom-0 rounded-0 bg-dark" style="max-width: 20rem;">
+              <div class="card-content d-flex m-auto border-3 border-bottom">
+                <img class="py-3" src="Images/anantara_plaza_nice_hotel_presidential_suite_balcony_0096-1556x1037.jpg" alt="">
+                <h3 class=" text-light fw-bold ms-2 align-self-center">Vision</h3>
+              </div>
+              <div class="contact pt-3">
+                <h4 class=" text-light text-center">Services For All</h4>
+                <h4 class=" text-light text-center">Provide Best Services</h4>
+                <h4 class=" text-light text-center">You Will Be Better Than Before</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class=" text-light">
+        <h2 class="copyright text-light text-center py-2">CopyRight &copy; 2024 Anantara Hotels & Resorts</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/all.min.js"></script>
+  </body>
+</html>
